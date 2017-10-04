@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MovieListingMVP</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="title_activity_movie_list">MovieListActivity</string>
+    <string name="movie_lists">Movie Lists</string>
+    <string name="no_photos_available">No Movies Available</string>
+    <string name="watchtrailer">Watch Trailer</string>
+</resources>

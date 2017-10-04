@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/caste_itm_width"
+    android:layout_height="@dimen/rv_caste_height"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/rv_card_margin"
+        android:padding="@dimen/overallpadding">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/icons"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/ivCasteProfilePic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/caste_img_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/profileplaceholder" />
+
+            <TextView
+                android:id="@+id/tvCasteName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morgan ffd fd fdfdfd fd"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/txt_small_medium"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="@dimen/rv_card_margin"
+    android:layout_marginRight="@dimen/rv_card_margin"
+    android:layout_marginTop="@dimen/rv_card_margin"
+    android:background="@color/icons"
+    android:elevation="@dimen/card_elevation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/icons"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movie_item_height"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/ivMoviePoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:scaleType="fitXY"
+                android:src="@drawable/profileplaceholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="start|center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/movie_item_brief_padding">
+
+                <TextView
+                    android:id="@+id/tvMovieTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/movietitlespadding"
+                    android:text="@string/movie_title"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/txt_ultra_large"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/movietitlespadding"
+                    android:text="OverView"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/txt_large" />
+
+
+                <TextView
+                    android:id="@+id/tvMovieDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/movie_overview_height"
+                    android:ellipsize="end"
+                    android:lines="4"
+                    android:padding="@dimen/movietitlespadding"
+                    android:text="Several years after the tragic death of their little girl, a dollmaker and his wife welcome a nun and several girls from a shuttered orphanage into their home, soon becoming the target of the dollmaker's possessed creation, Annabelle."
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/txt_medium" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
